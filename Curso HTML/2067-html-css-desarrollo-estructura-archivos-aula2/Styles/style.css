@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #4F200D;
+    --color-secundario: #FFD93D;
+    --color-terciario: #FF9A00;
+    --color-hover: #F6F1E9;
+
+    --fuente-montserrat: "Montserrat", sans serif;
+    --fuente-krona: "Krona One", sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 10%;
+}
+
+.header-menu {
+    display: flex;
+    gap: 80px;  
+}
+
+.header-menu-link {
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.TituloDestaque {
+    color: var(--color-terciario);
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 10%;
+    justify-content: space-between;
+}
+
+.presentacion-contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion-contenido-titulo {
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion-contenido-parrafo {
+    font-size: 24px;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion-enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion-enlaces-subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentacion-enlaces-link {
+    width: 378px;
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion-enlaces-link:hover {
+    background-color: var(--color-hover);
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
