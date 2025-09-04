@@ -67,6 +67,11 @@ body {
     font-family: var(--fuente-montserrat);
 }
 
+.certificado {
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
 .presentacion-enlaces {
     display: flex;
     justify-content: space-between;
