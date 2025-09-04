@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --color-primario: #4F200D;
-    --color-secundario: #FFD93D;
-    --color-terciario: #FF9A00;
-    --color-hover: #F6F1E9;
+    --color-primario: #00204A;
+    --color-secundario: #00BBF0;
+    --color-terciario: #FDB44B;
+    --color-hover: #005792;
 
     --fuente-montserrat: "Montserrat", sans serif;
     --fuente-krona: "Krona One", sans serif;
@@ -32,7 +32,7 @@ body {
 
 .header-menu-link {
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
@@ -47,22 +47,23 @@ body {
     align-items: center;
     padding: 6% 10%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion-contenido {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .presentacion-contenido-titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
 .presentacion-contenido-parrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -76,17 +77,17 @@ body {
 
 .presentacion-enlaces-subtitulo {
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .presentacion-enlaces-link {
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0px;
     border-radius: 8px;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-secundario);
@@ -100,6 +101,10 @@ body {
     background-color: var(--color-hover);
 }
 
+.presentacion-imagen {
+    width: 50%;
+}
+
 .footer {
     background-color: var(--color-terciario);
     padding: 24px;
@@ -107,4 +112,25 @@ body {
     text-align: center;
     font-family: var(--fuente-montserrat);
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+    padding: 10%;
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }   
+
+    .presentacion-contenido {
+        width: auto;
+    }
+
 }
